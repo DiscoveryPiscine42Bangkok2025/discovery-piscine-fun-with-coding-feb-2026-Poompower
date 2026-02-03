@@ -1,28 +1,49 @@
-.container {
-    display: flex;
-    flex-wrap: wrap;
+/* ทำให้หน้าเว็บเต็มจอ */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.box {
+/* ตาราง responsive */
+table {
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+/* cell */
+td {
     width: 50%;
-    height: 300px;
-    font-size: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw; /* ตัวอักษรย่อ-ขยายตามหน้าจอ */
 }
 
-.box1 {
-    background-color: lightblue;
-}
-
-.box2 {
+/* สี */
+.left {
     background-color: lightgreen;
 }
 
-/* Small screens */
+.right {
+    background-color: peachpuff;
+}
+
 @media (max-width: 768px) {
-    .box {
+    table {
+        height: 100%;
+    }
+
+    tr {
+        display: block;
+        height: 100%;
+    }
+
+    td {
+        display: block;
         width: 100%;
+        height: 50%;
+        font-size: 6vw; /* ให้อ่านออกตอนมือถือ */
     }
 }

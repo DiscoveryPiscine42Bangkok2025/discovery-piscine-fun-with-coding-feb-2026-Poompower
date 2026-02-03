@@ -24,7 +24,6 @@ html, body {
 .parallax-2 {
     background-image: url("https://wallpapercave.com/wp/wp10908113.jpg");
 }
-
 .text {
     color: white;
     font-size: 48px;
@@ -36,7 +35,6 @@ html, body {
     height: 400px;
     background-color: black;
     color: white;
-
     display: flex;
     justify-content: center;
     align-items: center;

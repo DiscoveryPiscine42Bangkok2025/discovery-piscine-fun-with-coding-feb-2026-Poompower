@@ -2,45 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ex06 - Responsive</title>
-
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .box {
-            width: 50%;
-            height: 300px;
-            font-size: 48px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .box1 {
-            background-color: lightblue;
-        }
-
-        .box2 {
-            background-color: lightgreen;
-        }
-
-        /* Small screens */
-        @media (max-width: 768px) {
-            .box {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="box box1">textbox1</div>
-        <div class="box box2">textbox2</div>
-    </div>
+    <style>
+        /* ทำให้หน้าเว็บเต็มจอ */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ตาราง responsive */
+table {
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+}
+
+/* cell */
+td {
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw; /* ตัวอักษรย่อ-ขยายตามหน้าจอ */
+}
+
+/* สี */
+.left {
+    background-color: lightgreen;
+}
+
+.right {
+    background-color: peachpuff;
+}
+    </style>
+
+<table width="100%" style="min-height: 200px; border-collapse: collapse;">
+    <tr>
+        <td class="left">
+            textbox1
+        </td>
+        <td class="right">
+            textbox2
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
