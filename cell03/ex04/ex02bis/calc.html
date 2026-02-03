@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's over 9000 (jQuery)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+        input, select {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="left">
+<select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+    <option value="%">%</option>
+</select>
+<input type="text" id="right">
+<input type="submit" id="try" value="Try me!">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(function () {
+        function isPositiveInteger(value) {
+            return /^\d+$/.test(value);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $('#try').on('click', function (e) {
+            e.preventDefault();
+            const left = $('#left').val();
+            const right = $('#right').val();
+            const op = $('#operator').val();
+
+            if (!isPositiveInteger(left) || !isPositiveInteger(right)) {
+                alert('Error :(');
+                return;
+            }
+
+            const a = parseInt(left, 10);
+            const b = parseInt(right, 10);
+            let result;
+
+            if ((op === '/' || op === '%') && b === 0) {
+                alert("It’s over 9000!");
+                console.log("It’s over 9000!");
+                return;
+            }
+
+            switch (op) {
+                case '+': result = a + b; break;
+                case '-': result = a - b; break;
+                case '*': result = a * b; break;
+                case '/': result = a / b; break;
+                case '%': result = a % b; break;
+            }
+
+            alert(result);
+            console.log(result);
+        });
+
+        setInterval(() => {
+            alert('Please, use me...');
+        }, 30000);
+    });
+
+</script>
+
+</body>
+</html>
