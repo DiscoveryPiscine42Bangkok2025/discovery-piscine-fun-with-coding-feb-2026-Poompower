@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-1 {
+    background-image: url("https://gvantsa.home.blog/wp-content/uploads/2018/09/wallpaper-wiki-hd-beautiful-nature-background-pic-wpd0013512.jpg");
+}
+
+.parallax-2 {
+    background-image: url("https://wallpapercave.com/wp/wp10908113.jpg");
+}
+
+.text {
+    color: white;
+    font-size: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+.content {
+    height: 400px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    text-align: center;
+}
