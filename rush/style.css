@@ -34,17 +34,6 @@ body {
   text-shadow: 0 0 10px rgba(125,249,255,0.4);
 }
 
-/* scroll progress */
-#scrollProgress{
-  position: fixed;
-  top: 0; left: 0;
-  height: 3px;
-  width: 0%;
-  background: var(--neon);
-  z-index: 9999;
-  box-shadow: 0 0 12px rgba(125,249,255,0.7);
-}
-
 /* section spacing + divider */
 section {
   scroll-margin-top: 92px;
